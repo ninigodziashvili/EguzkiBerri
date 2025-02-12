@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navigacion {
+    height: 7em;
+    box-shadow: 2px;
+    padding: 1em;
+    margin-left: 1em;
+}
+.navigacionMenu {
+    border: 2px brown;
+    margin-left: 30em;
+    height: 30em;
+}
+.logo {
+
+}
+img {
+    height: 4em;
+    width: 5em;
+}
