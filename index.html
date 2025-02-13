@@ -3,29 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../Eguzki Berri/CSS/style.css">
+    <title>Eguzki Berri - Productos Frescos</title>
+    <link rel="stylesheet" href="../EguzkiBerri/CSS/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="navigacion">
-                <div class="logo">
-                    <img src="../Eguzki Berri/img/DALL·E.jpg" alt="">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="img/DALL·E.jpg" alt="Eguzki Berri Logo">
                 </div>
-                <div class="navigacionMenu">
-    
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <form class="search-form">
+                    <input type="text" class="search-input" placeholder="Buscar..." />
+                </form>
+                <div class="dropdown">
+                    <button class="dropbtn">ES<span class="arrow"></span>
+                    </button>
+                    <div class="dropdown-content"><a href="#">EN</a>
+                    </div>
                 </div>
             </div>
-
         </nav>
     </header>
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Bienvenido a Eguzki Berri</h1>
+                <p class="hero-text">Ofrecemos los mejores productos frescos y deliciosos.</p>
+                <a href="productos.html" class="hero-button">Ver Productos</a>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2 class="products-title">Nuevos Productos</h2>
+            <div class="products-container">
+                <div class="product">
+                    <img src="img/product1.jpg" alt="Producto 1" class="product-image">
+                    <h3 class="product-name">Tarta de Queso</h3>
+                    <p class="product-price">€4.2k</p>
+                </div>
+                <div class="product">
+                    <img src="img/product2.jpg" alt="Producto 2" class="product-image">
+                    <h3 class="product-name">Croissant</h3>
+                    <p class="product-price">€4.2</p>
+                </div>
+                <div class="product">
+                    <img src="img/product3.jpg" alt="Producto 3" class="product-image">
+                    <h3 class="product-name">Galletas</h3>
+                    <p class="product-price">€2.3k</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bestsellers">
+            <h2 class="bestsellers-title">Los Productos Más Comprados</h2>
+            <div class="bestsellers-container">
+                <div class="product">
+                    <img src="img/bestseller1.jpg" alt="Producto Más Vendido" class="product-image">
+                    <h3 class="product-name">Pan de Chocolate</h3>
+                    <p class="product-price">€5.42</p>
+                </div>
+                <div class="product">
+                    <img src="img/bestseller2.jpg" alt="Producto Más Vendido" class="product-image">
+                    <h3 class="product-name">Roll Canela</h3>
+                    <p class="product-price">€4.2</p>
+                </div>
+                <div class="product">
+                    <img src="img/bestseller3.jpg" alt="Producto Más Vendido" class="product-image">
+                    <h3 class="product-name">Croissant de Miel</h3>
+                    <p class="product-price">€15</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2025 Eguzki Berri - Todos los derechos reservados.</p>
+            <ul class="footer-social">
+                <li><a href="#" class="footer-link"><img src="icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#" class="footer-link"><img src="icons/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#" class="footer-link"><img src="icons/twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
