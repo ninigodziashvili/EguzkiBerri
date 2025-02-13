@@ -3,29 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../Eguzki Berri/CSS/style.css">
+    <title>Eguzki Berri - Productos Frescos</title>
+    <link rel="stylesheet" href="../EguzkiBerri/CSS/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="navigacion">
-                <div class="logo">
-                    <img src="../Eguzki Berri/img/DALL·E.jpg" alt="">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="img/DALL·E.jpg" alt="Eguzki Berri Logo">
                 </div>
-                <div class="navigacionMenu">
-    
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="active">Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <form class="search-form">
+                    <input type="text" class="search-input" placeholder="Buscar..." />
+                </form>
+                <div class="dropdown">
+                    <button class="dropbtn">ES<span class="arrow"></span>
+                    </button>
+                    <div class="dropdown-content"><a href="#">EN</a>
+                    </div>
                 </div>
             </div>
-
         </nav>
     </header>
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+    <main class="main">
+        <section class="infoSection">
+            <div class="imageContainer">
+                <img src="../EguzkiBerri/img/mostrador-panaderia-pasteleria-lazareno-gourmet-1.png" alt="">
+            </div>
+            <div class="card">
+                <h2>Panaderia Eguzki Berri</h2>
+                <p>La pastelería y panadería son artes culinarias que deleitan los sentidos con sus aromas y sabores
+                    únicos.</p>
+                <p>Cada creación es una obra de arte, decorada con meticulosidad y sabor excepcional</p>
+                <a href="" class="mainButton">Ver mas productos</a>
+            </div>
+        </section>
+        <br>
+        <hr class="rounded">
+        <section class="products">
+            <h2 class="products-title">Nuevos Productos</h2>
+            <h3 class="products-subtitle">Prueba nuestros nuevos productos</h3>
+            <div class="products-wrapper">
+                <button class="scroll-left">‹</button>
+                <div class="products-container">
+                    <div class="product">
+                        <img src="../EguzkiBerri/img/image30.png" alt="Producto 1" class="product-image">
+                        <span class="badge">New</span>
+                        <h3 class="product-name">Tarta de Queso</h3>
+                        <p class="product-price">€4.2</p>
+                    </div>
+                    <div class="product">
+                        <img src="../EguzkiBerri/img/image26.jpg" alt="Producto 2" class="product-image">
+                        <span class="badge">New</span>
+                        <h3 class="product-name">Croissant</h3>
+                        <p class="product-price">€4.2</p>
+                    </div>
+                    <div class="product">
+                        <img src="../EguzkiBerri/img/image28.png" alt="Producto 3" class="product-image">
+                        <span class="badge">New</span>
+                        <h3 class="product-name">Galletas</h3>
+                        <p class="product-price">€2.3</p>
+                    </div>
+                    <div class="product">
+                        <img src="../EguzkiBerri/img/image29.png" alt="Producto 4" class="product-image">
+                        <span class="badge">New</span>
+                        <h3 class="product-name">Sandwich</h3>
+                        <p class="product-price">€3.5</p>
+                    </div>
+                    <div class="product">
+                        <img src="../EguzkiBerri/img/image46.png" alt="Producto 5" class="product-image">
+                        <span class="badge">New</span>
+                        <h3 class="product-name">Chocolate Cake</h3>
+                        <p class="product-price">€5.0</p>
+                    </div>
+                </div>
+                <button class="scroll-right">›</button>
+            </div>
+            <br>
+            <hr class="rounded">
+        </section>
+        <section class="bestsellers">
+            <h2 class="bestsellers-title">Los Productos Más Comprados</h2>
+            <div class="bestsellers-container">
+                <div class="product">
+                    <img src="img/bestseller2.png" alt="Producto Más Vendido" class="product-image">
+                    <h3 class="product-name">Pan de Chocolate</h3>
+                    <p class="product-price">€5.42</p>
+                </div>
+                <div class="product">
+                    <img src="img/bestseller2.jpg" alt="Producto Más Vendido" class="product-image">
+                    <h3 class="product-name">Roll Canela</h3>
+                    <p class="product-price">€4.2</p>
+                </div>
+                <div class="product">
+                    <img src="img/bestseller3.jpg" alt="Producto Más Vendido" class="product-image">
+                    <h3 class="product-name">Croissant de Miel</h3>
+                    <p class="product-price">€15</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2025 Eguzki Berri - Todos los derechos reservados.</p>
+            <ul class="footer-social">
+                <li><a href="#" class="footer-link"><img src="icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#" class="footer-link"><img src="icons/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#" class="footer-link"><img src="icons/twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
