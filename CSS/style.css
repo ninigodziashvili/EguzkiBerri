@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+header {
+    width: 100%;
+}
+
 body {
     background-color: #f6f8f3;
     height: 100%;
@@ -14,11 +18,6 @@ body {
     src: url('../fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-.nav-container {
-    height: 7em;
-    display: flex;
 }
 
 img {
@@ -130,7 +129,7 @@ img {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: space-around;
 }
 
 .dropbtn {
@@ -220,8 +219,8 @@ img {
 }
 
 hr.rounded {
-    border-top: 3px solid rgb(221, 170, 155, 1);
-    ;
+    border-top: 3px solid rgb(241, 228, 214, 1);
+    margin: 0 0 20px 20px;
 }
 
 .mainButton {
@@ -263,7 +262,7 @@ hr.rounded {
 
 .product {
     width: 200px;
-    background: white;
+    background: #f6f8f3;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -315,152 +314,37 @@ hr.rounded {
     font-size: 30px;
     margin-bottom: 7px;
     color: #57382E;
-=======
+}
+
+.bestsellers-subtitle {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 7px;
+    color: #57382E;
+}
+
 .nav-container {
     height: 7em;
     display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
 }
 
-img {
-    height: 4em;
-    width: 5em;
-    margin-left: 1em;
-}
-
-.nav-logo {
-    display: inline-block;
-    margin-top: 2em;
-}
-
-.nav-menu {
+.utilities {
     display: flex;
-    position: sticky;
-    align-items: center;
-    justify-content: start;
-    top: 0px;
-    left: 0;
-    gap: 5em;
-    background-size: cover;
-    color: white;
-    padding: 5px;
-    margin-left: 1em;
-    width: 40em;
-    height: 5em;
-    box-shadow: 0px 2px 4px 0 #757373;
-}
-
-.nav-item {
-    display: flex;
-    list-style: none;
-    margin-left: 1em;
-}
-
-.nav-item li {
-    margin-right: 20px;
-    text-decoration: none;
-}
-
-.nav-item li:last-child {
-    margin-right: 0;
-}
-.nav-item li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-}
-.nav-item li a:hover {
-    color: #ffd700;
-}
-
-.rightNav {
-    text-align: right;
-}
-.nav-item a {
-    text-decoration: none;
-    color: black;
-}
-.search-form {
-    display: flex;
-    align-items: center;
-    margin-left: 15em;
-}
-
-.search-input {
-    padding: 10px 30px 10px 10px;
-    font-size: 16px;
-    border: 1.5px solid black;
-    border-radius: 5px;
-    width: 20em;
-    background-image: url('../img/search.png');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 16px 16px;
-    transition: width 0.3s ease-in-out;
-}
-
-.search-input:focus {
-    outline: none;
-    width: 250px;
-}
-
-.search-input::placeholder {
-    color: #888;
-}
-.dropdown {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.dropbtn {
-    background-color: white;
-    color: #333;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.arrow {
-    width: 8px;
-    height: 8px;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    transform: rotate(45deg);
-    margin-top: 2px;
-    transition: transform 0.3s ease;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    width: 150px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    z-index: 1;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
     
-    white-space: nowrap;
-    max-height: 150px;
-    overflow-y: auto;
-    padding: 5px 0;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+}
+
+@media (min-width:2560px) {
+    
 }
