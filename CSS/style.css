@@ -27,12 +27,13 @@ img {
 }
 
 .nav-logo {
-    display: inline-block;
+    display: flex;
     margin-top: 1em;
 }
 
 .nav-menu {
     display: flex;
+    flex-direction: row;
     position: sticky;
     align-items: center;
     justify-content: start;
@@ -193,6 +194,7 @@ img {
 .infoSection {
     margin-top: 2em;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -207,11 +209,16 @@ img {
     height: 20em;
     border-radius: 7%;
     padding: 1em;
+    overflow: hidden;
+    word-wrap: break-word;
+
 }
 
 .card p {
     line-height: 1em;
     margin-top: 10px;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .card h2 {
@@ -250,7 +257,6 @@ hr.rounded {
 .products-subtitle {
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 40px;
     color: #57382E;
 }
 
@@ -258,6 +264,34 @@ hr.rounded {
     display: flex;
     gap: 40px;
     padding: 10px;
+}
+
+.bestsellers-container {
+    display: flex;
+    gap: 60px;
+    padding: 5px 5px 10px 10px;
+    justify-content: center;
+}
+
+.bestseller-product {
+    width: 250px;
+    height: 310px;
+    background: #f6f8f3;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.bestseller-product p {
+    padding: 7px;
+}
+
+.bestseller-product.product-name {
+    padding: 5px;
 }
 
 .product {
@@ -309,18 +343,30 @@ hr.rounded {
     margin-left: 0;
 }
 
+.bestseller-product img {
+    height: 15em;
+    margin-left: 0;
+}
+
 .bestsellers-title {
     text-align: center;
     font-size: 30px;
-    margin-bottom: 7px;
     color: #57382E;
+    margin-bottom: 7px;
 }
 
 .bestsellers-subtitle {
     text-align: center;
-    font-size: 15px;
-    margin-bottom: 7px;
-    color: #57382E;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #5E6282;
+}
+
+.bestsellers p {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 3em;
 }
 
 .nav-container {
@@ -334,17 +380,119 @@ hr.rounded {
 
 .utilities {
     display: flex;
+    flex-direction: row;
     margin-right: 10px;
     flex-direction: row;
     justify-content: space-around;
     gap: 50px;
-    
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
-@media (min-width:2560px) {
-    
+.nav-container {
+    height: 7em;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    height: 12em;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 200px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.footer-link img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-container {
+    padding: 1.5em;
+}
+
+.footer-container h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footer-container p {
+    color: #8E8E8E;
+}
+
+.link-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.link-menu a {
+    color: #8E8E8E;
+    list-style: none;
+    text-decoration: none;
+    line-height: 2.5em;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 1em;
+        height: 12em;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .utilities {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        gap: 10px;
+        margin-bottom: -100px;
+    }
+
+    .search-form {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .infoSection {
+        flex-direction: column;
+        height: 60em;
+        gap: 5em;
+    }
 }
