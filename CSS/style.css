@@ -605,4 +605,20 @@ footer ul {
         height: 60em;
         gap: 5em;
     }
+
+    .products-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .bestsellers-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px 5px 10px 10px;
+        justify-content: center;
+        align-items: center;
+    }
 }
