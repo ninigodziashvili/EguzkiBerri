@@ -401,6 +401,82 @@ hr.rounded {
     align-items: center;
 }
 
+.offers {
+    height: 25em;
+    width: 100%;
+}
+
+.offer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.offer-main-text {
+    width: 25em;
+    height: 10em;
+    font-weight: bold;
+}
+
+.offer-info p {
+    text-align: center;
+    color: #57382E;
+    font-size: 30px;
+    word-wrap: break-word;
+    margin-top: 3px;
+}
+
+.offer-info h4 {
+    text-align: center;
+    color: #5E6282;
+    margin-bottom: 3px;
+}
+
+.offers img {
+    width: 100px;
+    height: 100px;
+}
+
+.offer-card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    justify-content: center;
+}
+
+.offer-card-images {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.offer-card-images img {
+    width: 50px;
+    height: 50px;
+}
+
+.offer-card p {
+    color: #57382E;
+    font-size: 12px;
+    word-wrap: break-word;
+    margin-top: 3px;
+}
+
+.offer-card h4 {
+    color: #5E6282;
+    margin-bottom: 3px;
+}
+
 footer {
     height: 12em;
     background-color: rgb(34, 33, 33);
@@ -455,7 +531,7 @@ footer ul {
     .nav-container {
         flex-direction: column;
         height: auto;
-        padding: 10px;
+        padding: 12px;
     }
 
     .nav-menu {
