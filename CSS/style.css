@@ -414,6 +414,8 @@ hr.rounded {
 .offers {
     height: 25em;
     width: 100%;
+    position: relative;
+    z-index: 12;
 }
 
 .offer-info {
@@ -455,6 +457,7 @@ hr.rounded {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    z-index: 12;
 }
 
 .offer-card {
@@ -462,6 +465,9 @@ hr.rounded {
     flex-direction: column;
     width: 15em;
     justify-content: center;
+    align-items: center;
+    padding: 1em;
+    z-index: 12;
 }
 
 .offer-card-images {
@@ -486,13 +492,23 @@ hr.rounded {
     margin-bottom: 3px;
 }
 
+.offer-card:nth-child(2) {
+    border-radius: 7px;
+    box-shadow: 6px 3px 4px 1px #bebcbc;
+    background-color: #f6f8f3;
+}
+
+.offer-rectangle-image {
+    position: absolute;
+    margin-left: 27em;
+    z-index: 1;
+    bottom: 20px;
+}
+
 .offer-rectangle-image img {
     width: 5em;
     height: 5em;
-    margin-top: -50px;
-    display: absolute;
     z-index: 1;
-    margin-left: 27em;
 }
 
 footer {
