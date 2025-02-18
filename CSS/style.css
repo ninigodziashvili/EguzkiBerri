@@ -244,8 +244,8 @@ hr.rounded {
 
 .products-title {
     text-align: center;
-    font-size: 35px;
-    margin-bottom: 7px;
+    font-size: 50px;
+    margin-bottom: 0.5em;
     color: #57382E;
 }
 
@@ -383,18 +383,16 @@ hr.rounded {
     height: 7em;
     display: flex;
     width: 100%;
-    margin: 0;
+    max-width: 1200px;
     padding: 0;
     justify-content: space-between;
 }
 
 .utilities {
     display: flex;
-    flex-direction: row;
     margin-right: 10px;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 50px;
+    justify-content: center;
 }
 
 .dropdown-content a:hover {
@@ -568,9 +566,14 @@ footer ul {
     flex-direction: row;
     padding: 2em;
     margin: 2em;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: start;
     margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.filter {
+    margin-top: -10px;
 }
 
 .filter-fields {
@@ -585,7 +588,7 @@ footer ul {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 4px;
+    gap: 2px;
 }
 
 .checkbox-item {
@@ -642,11 +645,18 @@ footer ul {
     font-size: 15px;
 }
 
+.main-products-container {
+margin-bottom: 2em;
+}
+
+.products-information {
+    max-width: 40em;
+}
+
 @media (max-width: 768px) {
     .nav-container {
-        flex-direction: column;
-        height: auto;
-        padding: 12px;
+        height: 7em;
+        display: flex;
     }
 
     .nav-menu {
@@ -701,5 +711,11 @@ footer ul {
         padding: 5px 5px 10px 10px;
         justify-content: center;
         align-items: center;
+    }
+    /**/
+    .products-info-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
