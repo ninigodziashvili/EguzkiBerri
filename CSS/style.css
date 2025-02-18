@@ -244,8 +244,8 @@ hr.rounded {
 
 .products-title {
     text-align: center;
-    font-size: 35px;
-    margin-bottom: 7px;
+    font-size: 50px;
+    margin-bottom: 0.5em;
     color: #57382E;
 }
 
@@ -383,7 +383,7 @@ hr.rounded {
     height: 7em;
     display: flex;
     width: 100%;
-    margin: 0;
+    max-width: 1200px;
     padding: 0;
     justify-content: space-between;
 }
@@ -566,9 +566,14 @@ footer ul {
     flex-direction: row;
     padding: 2em;
     margin: 2em;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: start;
     margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.filter {
+    margin-top: -10px;
 }
 
 .filter-fields {
@@ -644,11 +649,14 @@ footer ul {
 margin-bottom: 2em;
 }
 
+.products-information {
+    max-width: 40em;
+}
+
 @media (max-width: 768px) {
     .nav-container {
-        flex-direction: column;
-        height: auto;
-        padding: 12px;
+        height: 7em;
+        display: flex;
     }
 
     .nav-menu {
@@ -703,5 +711,11 @@ margin-bottom: 2em;
         padding: 5px 5px 10px 10px;
         justify-content: center;
         align-items: center;
+    }
+    /**/
+    .products-info-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
