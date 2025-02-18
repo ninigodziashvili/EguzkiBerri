@@ -390,11 +390,9 @@ hr.rounded {
 
 .utilities {
     display: flex;
-    flex-direction: row;
     margin-right: 10px;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 50px;
+    justify-content: center;
 }
 
 .dropdown-content a:hover {
@@ -585,7 +583,7 @@ footer ul {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 4px;
+    gap: 2px;
 }
 
 .checkbox-item {
@@ -640,6 +638,10 @@ footer ul {
 .dropbtn span {
     color: #9AA6AC;
     font-size: 15px;
+}
+
+.main-products-container {
+margin-bottom: 2em;
 }
 
 @media (max-width: 768px) {
