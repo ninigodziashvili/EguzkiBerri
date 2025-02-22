@@ -40,12 +40,12 @@ img {
     justify-content: start;
     top: 0px;
     left: 0;
-    gap: 0.7em;
+    gap: 1em;
     background-size: cover;
     color: white;
     padding: 5px;
     margin-left: 1.5em;
-    width: 30em;
+    width: 29em;
     height: 5em;
     box-shadow: 0px 2px 4px 0 #757373;
     border-radius: 5px;
@@ -353,7 +353,6 @@ hr.rounded {
     text-align: center;
     font-size: 30px;
     color: #57382E;
-    margin-bottom: 7px;
 }
 
 .bestsellers-subtitle {
@@ -551,7 +550,7 @@ footer ul {
     line-height: 2.5em;
 }
 
-/* */
+/* Products */
 
 .products-info-section {
     display: flex;
@@ -784,6 +783,117 @@ footer ul {
     opacity: 1;
 }
 
+/* About us */
+
+.our-history {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5em;
+    margin: 1.5em;
+}
+
+.our-history-img-container {
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.our-history-img-container img {
+    width: 18em;
+    height: 18em;
+}
+
+.our-history-info {
+    max-width: 57em;
+}
+
+.our-history-info h1 {
+    margin-bottom: 1em;
+}
+
+.our-history-p {
+    margin-bottom: 2em;
+}
+
+.our-history-p-text {
+    margin-bottom: 1em;
+}
+
+.split-text-container {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #57382E;
+    overflow: hidden;
+    text-align: center;
+}
+
+.text-part {
+    display: inline-block;
+    position: relative;
+    transform: translateX(0);
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.text-part.left {
+    margin-right: 10px;
+    transform: translateX(-200%);
+    animation-name: slide-in-left;
+}
+
+.text-part.right {
+    transform: translateX(200%);
+    animation-name: slide-in-right;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.our-history-info-list {
+    list-style: none;
+}
+
+.map-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.map-section p {
+    max-width: 80em;
+}
+
+.shop-of-map {
+    margin-top: 2em;
+    width: 70em;
+    height: 40em;
+    border-radius: 10px;
+
+}
+
 @media (max-width: 768px) {
 
     header {
@@ -798,7 +908,7 @@ footer ul {
         border-top: 3px solid rgb(241, 228, 214, 1);
         margin: 1em;
     }
-    
+
     .nav-container {
         height: 5em;
         display: flex;
@@ -882,11 +992,11 @@ footer ul {
     }
 
     .products-container {
-       display: flex;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
-        padding: 15px; 
+        padding: 15px;
     }
 
     .products-wrapper {
@@ -918,7 +1028,7 @@ footer ul {
         align-items: center;
         gap: 20px;
     }
-  
+
     /**/
     .products-info-section {
         display: flex;
