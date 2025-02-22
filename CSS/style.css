@@ -353,7 +353,6 @@ hr.rounded {
     text-align: center;
     font-size: 30px;
     color: #57382E;
-    margin-bottom: 7px;
 }
 
 .bestsellers-subtitle {
@@ -810,7 +809,7 @@ footer ul {
 }
 
 .our-history-info h1 {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .our-history-p {
