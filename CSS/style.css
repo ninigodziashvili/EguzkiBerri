@@ -649,7 +649,6 @@ footer ul {
     max-width: 40em;
 }
 
-
 .cards {
     width: 100%;
     display: flex;
@@ -892,6 +891,102 @@ footer ul {
     height: 40em;
     border-radius: 10px;
 
+}
+
+/* Contact */
+
+.contact {
+    margin: 2em;
+    padding: 2em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.contact h1 {
+    font-size: 30px;
+    color: #57382E;
+    text-align: left;
+}
+
+.form-info {
+    border-radius: 10px;
+    background-color: #ddd9d9;
+    width: 40em;
+    height: 30em;
+}
+
+.fill-info {
+    padding: 1em;
+    margin: 0.7em;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.address {
+    background-color: #F1E4D6;
+    width: 30em;
+    height: 13em;
+    border-radius: 20px;
+    padding: 2em;
+}
+
+.address h3 {
+    margin-top: 0.1em;
+}
+
+.fill-info input[type=text] {
+    width: 20em;
+    height: 2.5em;
+    border-radius: 5px rgb(204, 201, 201) solid ;
+}
+
+input.statement {
+   margin-left: 3em;
+}
+
+.fill-info input {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.fill-info textarea {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+form input label {
+    margin-bottom: 12em;
+}
+
+.fill-info input[type=submit] {
+    background-color: #333;
+    border-radius: 7px;
+    width: 20em;
+    height: 2.5em;
+    color: white;
+}
+
+.fill-info input[type=radio] {
+    accent-color:  rgb(222, 181, 168);
+}
+
+.customer-section {
+    margin: 2em;
+    padding: 2em;
+}
+
+.customer-section h1 {
+    font-size: 30px;
+    color: #57382E;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
