@@ -1619,10 +1619,6 @@ form input label {
         padding: 0;
     }
 
-    .map-section {
-        
-    }
-
     .map-section iframe {
         min-height: 400px;
         max-width: 410px;
@@ -1655,35 +1651,39 @@ form input label {
 
     .form-info {
         width: 100%;
+        height: 50em;
     }
 
     .fill-info {
         display: flex;
         flex-direction: column;
-        align-items: end;
-        justify-content: center;
-        width: 100%;
-        max-width: 250px;
+        margin-top: 10px;
     }
-
-    .fill-info input,
-    .fill-info textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 1rem;
-    }
-
+    
     .contact-cards {
-        width: 100%;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fill-info input[type=radio] {
+      
+    }
+
+    .address {
+        max-width: 20em;
     }
 
     .address h3 {
-        font-size: 1.2rem;
+        font-size: 15px;
     }
 
     .address ul {
         padding: 0;
         list-style: none;
+    }
+
+    .send-info-to-work {
+        margin-top: 50em;
     }
 }
