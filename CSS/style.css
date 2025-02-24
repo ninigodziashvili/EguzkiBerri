@@ -247,7 +247,7 @@ hr.rounded {
     background: linear-gradient(45deg, #c05e5e, #ae7169, #866f63, #a25d4e, hsl(0, 30%, 53%));
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -284,9 +284,17 @@ hr.rounded {
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 .mainButton {
@@ -628,7 +636,7 @@ footer ul {
 }
 
 .products p {
-  color: #57382E;
+    color: #57382E;
 
 }
 
@@ -1252,9 +1260,11 @@ form input label {
     }
 
     .utilities {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
         margin-right: 0;
+        margin-top: 1.5em;
         gap: 10px;
         margin-bottom: -100px;
     }
@@ -1308,7 +1318,7 @@ form input label {
 
     .products-container {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         width: 100%;
     }
@@ -1319,7 +1329,7 @@ form input label {
         padding-top: 0;
     }
 
-  
+
     .products p {
         text-align: center;
         margin-right: 1em;
@@ -1327,7 +1337,7 @@ form input label {
 
     .bestsellers-container {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         width: 100%;
     }
@@ -1394,15 +1404,15 @@ form input label {
     }
 
     .main-products-container.product {
-            grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+
     /* About us */
 
     .our-history {
         margin-top: 7em;
         flex-direction: column;
-       justify-content: end;
+        justify-content: end;
 
     }
 
@@ -1457,7 +1467,7 @@ form input label {
         gap: 30px;
         margin-top: 1em;
     }
-    
+
     .contact h1 {
         margin-top: 3em;
     }
@@ -1483,5 +1493,128 @@ form input label {
 
     .customer-card p {
         overflow: auto;
+    }
+
+    hr.rounded {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    hr.rounded {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .nav-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        height: auto;
+        width: 100%;
+        gap: 0.5em;
+        padding: 5px 0;
+    }
+
+    .utilities {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+        gap: 5px;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 90%;
+    }
+
+    .products-title {
+        font-size: 24px;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bestsellers-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .offers {
+        position: relative;
+        top: auto;
+    }
+
+    .offer-info {
+        flex-direction: column;
+        margin: 8em;
+    }
+
+    .offer-rectangle-image {
+        display: none;
+    }
+
+    footer {
+        margin-top: 2em;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 2em 1em;
+    }
+
+    .our-history {
+        margin-top: 5em;
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .our-history-info h1 {
+        font-size: 1.3em;
+    }
+
+    .our-history-p {
+        font-size: 0.9em;
+        margin-bottom: 1em;
+    }
+
+    .our-history-img-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .our-history-info-list {
+        font-size: 0.9em;
+        padding: 0;
+    }
+
+    .map-section iframe {
+        min-height: 200px;
+    }
+
+    .contact h1 {
+        margin-top: 2em;
+        font-size: 1.5em;
+    }
+
+    .customer-comments {
+        grid-template-columns: 1fr;
+    }
+
+    .send-info-to-work {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5em;
     }
 }
