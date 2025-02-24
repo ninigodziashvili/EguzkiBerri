@@ -553,8 +553,8 @@ hr.rounded {
 }
 
 .offer-rectangle-image {
+    margin-right: 30em;
     position: absolute;
-    margin-left: 27em;
     z-index: 1;
     bottom: 20px;
 }
@@ -622,20 +622,19 @@ footer ul {
     flex-direction: row;
     padding: 2em;
     margin: 2em;
-    justify-content: space-between;
-    align-items: start;
     margin-left: 10px;
     margin-bottom: 10px;
+    gap: 15em;
 }
 
 .products p {
-  padding: 0 0 20px 20px;
   color: #57382E;
+
 }
 
 .filter {
-    display: flex;
-    flex-direction: column;
+    text-align: left;
+    margin-left: 2em;
 }
 
 .filter h4 {
@@ -853,6 +852,11 @@ footer ul {
     opacity: 1;
 }
 
+.description-for-products {
+    padding: 1em;
+    margin-right: 15em;
+}
+
 /* About us */
 
 .our-history {
@@ -870,8 +874,8 @@ footer ul {
 }
 
 .our-history-img-container img {
-    width: 18em;
-    height: 18em;
+    width: 25em;
+    height: 22em;
 }
 
 .our-history-info {
@@ -1107,6 +1111,8 @@ form input label {
     font-size: 14px;
     padding: 1em;
     color: #57382E;
+    overflow: auto;
+    max-height: 7em;
 }
 
 .hr-style {
@@ -1210,7 +1216,7 @@ form input label {
     margin-top: 3em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     header {
         display: flex;
@@ -1271,19 +1277,16 @@ form input label {
 
     .filter {
         margin-top: 5em;
-        margin-left: 3em;
+        margin-bottom: 3em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 2em;
     }
 
     .products {
-        height: 50em;
-        width: 20em;
         margin-top: 10px;
-        text-align: center;
-        margin-left: 50px;
     }
 
     .products-title {
@@ -1303,51 +1306,182 @@ form input label {
         margin-bottom: 0;
     }
 
-    .bestsellers {
-        margin-top: 10px;
-    }
-
     .products-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
     }
 
     .products-wrapper {
-        display: flex;
-        flex-direction: row;
-        width: 20em;
-        height: 50em;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
+        height: 35em;
+        padding-top: 0;
+    }
+
+  
+    .products p {
+        text-align: center;
+        margin-right: 1em;
     }
 
     .bestsellers-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .offers {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        height: 55em;
+        width: 100%;
+        z-index: 12;
+        padding: 20em;
+    }
+
+    .offer-info {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        gap: 10px;
+        margin-top: 3em;
+    }
+
+    .offer-main-text p {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .offer-rectangle-image {
+        margin-right: 20em;
+        position: absolute;
+        z-index: 1;
     }
 
     footer {
-        height: 40em;
+        height: 20em;
         background-color: rgb(34, 33, 33);
         color: white;
-        width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: start;
         align-items: center;
         gap: 20px;
     }
 
-    /**/
+    .card {
+        margin-right: 25px;
+        transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+        background-color: #fff;
+        width: 100%;
+        height: 22em;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+        margin-left: 0.5em;
+    }
+
+    /* Products */
+
     .products-info-section {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .main-products-container.product {
+            grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* About us */
+
+    .our-history {
+        margin-top: 7em;
+        flex-direction: column;
+       justify-content: end;
+
+    }
+
+    .our-history-info {
+        max-width: 100%;
+    }
+
+    .our-history-info h1 {
+        font-size: 1.5em;
+        margin-bottom: 0.8em;
+    }
+
+    .our-history-p {
+        margin-bottom: 1.5em;
+        font-size: 1em;
+    }
+
+    .our-history-img-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .our-history-img-container img {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .our-history-info-list {
+        padding: 0;
+        list-style: none;
+        font-size: 1em;
+    }
+
+    .our-history-info-list li {
+        margin: 0.5em 0;
+    }
+
+    .map-section iframe {
+        width: 40em;
+        height: 30em;
+        margin-bottom: 1em;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 1em;
+    }
+    
+    .contact h1 {
+        margin-top: 3em;
+    }
+
+    .contact-cards {
+        gap: 20px;
+    }
+
+    .customer-comments {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        gap: 20px;
+    }
+
+    .send-info-to-work {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 15em;
+    }
+
+    .customer-card p {
+        overflow: auto;
     }
 }
