@@ -1008,7 +1008,7 @@ footer ul {
     border-radius: 10px;
     background-color: #ddd9d9;
     width: 40em;
-    height: 30em;
+    height: 35em;
 }
 
 .fill-info {
@@ -1512,7 +1512,19 @@ form input label {
 }
 
 @media (max-width: 600px) {
-
+    
+    .radio-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .radio-group input[type="radio"] {
+        margin: 0;
+        width: 18px;  /* Adjust size if needed */
+        height: 18px;
+    }
+    
     .main-products-container {
         grid-template-columns: 1fr;
     }
@@ -1662,7 +1674,7 @@ form input label {
 
     .form-info {
         width: 100%;
-        height: 50em;
+        height: 40em;
     }
 
     .fill-info {
