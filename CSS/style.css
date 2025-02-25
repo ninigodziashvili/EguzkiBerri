@@ -720,7 +720,13 @@ footer ul {
 }
 
 .main-products-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
     margin-bottom: 2em;
+    margin: 3em;
 }
 
 .products-information {
@@ -1225,7 +1231,7 @@ form input label {
     margin-top: 3em;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
 
     header {
         display: flex;
@@ -1233,6 +1239,10 @@ form input label {
         justify-content: center;
         margin-left: 10px;
         gap: 10px;
+    }
+
+    .main-products-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     hr.rounded {
@@ -1407,9 +1417,6 @@ form input label {
         gap: 10px;
     }
 
-    .main-products-container.product {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     /* About us */
 
@@ -1504,7 +1511,11 @@ form input label {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+
+    .main-products-container {
+        grid-template-columns: 1fr;
+    }
 
     hr.rounded {
         display: none;
@@ -1664,10 +1675,6 @@ form input label {
         text-align: center;
         align-items: center;
         justify-content: center;
-    }
-
-    .fill-info input[type=radio] {
-      
     }
 
     .address {
